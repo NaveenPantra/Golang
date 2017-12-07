@@ -1,0 +1,22 @@
+
+For running the code
+	$ go run filename.go
+
+Creating an .exe file in Workspace directory.
+
+	$ go build
+	  --> This commmand will create an .exe file for the package(folder).
+	  --> If there are two "main methods" in the package then it cannot create the .exe.
+	  --> To run in the unix style $ ./filename.exe.
+
+For cleaning the package folder
+	$ go clean
+	  --> This command will clean the .exe files created by the go build. 
+	  --> Remove the object files.
+
+For Installing the file 
+	$ go install
+	  --> This command should be placed only in the .exe file in the bin folder of the current working directory.
+	  --> This command install the file in the computer and can use directly (by directly typing $ filename.exe).
+	  --> If there are no main files in the package this command will create the .a(archive) file  in the pkg folder of the workspace.
+	  --> The path for the .a file is as the path in the sec folder with root folder as 'system architecture'.

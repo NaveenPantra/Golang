@@ -1,0 +1,11 @@
+Runes: In go programming language the characters are treated as runes.
+       --> But the rune is the alias of the int32.
+       --> By this reason.
+           --> fmt.Printf("%T", 'a')
+               OUTPUT: int32
+           --> This give output because this rune is the int32.
+       --> This is how the go programming language store the characters as int32.
+       --> If the programmer convert the int32 to the rune(rune(int32)) this is also give return the type int32.
+           --> Because the rune is the alias of the int32.
+       --> There is no character concept in the go programming language.
+       --> All the characters are runes and rune is int32.
